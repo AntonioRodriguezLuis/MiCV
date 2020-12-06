@@ -119,7 +119,7 @@ public class MainController implements Initializable {
 		if (fichero != null) {
 			try {
 				cv.set(JSONUtils.fromJson(fichero, CV.class));
-				Mensajes.info("Se ha abierto el fichero " + fichero.getName() + " correctamente.", "Pues eso...");
+				Mensajes.info("Se ha abierto el fichero " + fichero.getName() + " correctamente.", "Datos cargados");
 			} catch (JsonSyntaxException | IOException e) {
 				Mensajes.error("Ha ocurrido un error al abrir " + fichero, e.getMessage());
 			}
